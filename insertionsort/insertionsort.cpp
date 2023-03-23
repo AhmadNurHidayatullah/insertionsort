@@ -64,6 +64,14 @@ void insertionsort()
     }
 };
 
+void display()
+{
+    cout << endl;                       // output baris kosong
+    cout << "total element movement= " << n - 1 << endl;  // cout movement element
+    cout << "\n==================" << endl;      // output ke layar
+    cout << "element array yang telah tersusun" << endl; // output ke layar
+    cout << "===================" << endl; // output ke layar
+}
 int main()
 {
     std::cout << "Hello World!\n";
