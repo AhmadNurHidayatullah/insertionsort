@@ -4,7 +4,20 @@ using namespace std;
 int arr[20];
 int n;
 
+void input()
+{
+    while (true)
+        cout << "masukkan jumlah data pada Array: ";    // membuat inputan jumlah element array
+        cin >> n;        //memanggil variable inputan n
 
+        if (n <= 20)
+        {               // membuat kondisi n tidak lebih dari 20 
+            break;
+
+
+        }
+
+}
 int main()
 {
     std::cout << "Hello World!\n";
