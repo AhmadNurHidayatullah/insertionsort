@@ -6,18 +6,20 @@ int n;
 
 void input()
 {
-    while (true)
+    while (true) {
         cout << "masukkan jumlah data pada Array: ";    // membuat inputan jumlah element array
-    cin >> n;        //memanggil variable inputan n
+        cin >> n;        //memanggil variable inputan n
 
-    if (n <= 20)
-    {  // membuat kondisi n tidak lebih dari 20 
-        break;
+        if (n <= 20)
+        {  // membuat kondisi n tidak lebih dari 20 
+            break;
 
-    }
-    else
-    {
-        cout << "\nArray yang anda masukkan maksimal 20 element. \n"; // Menampilkan
+        }
+        else
+        {
+            cout << "\nArray yang anda masukkan maksimal 20 element. \n"; // Menampilkan
+        }
+
     }
 
     cout << endl;
@@ -47,8 +49,8 @@ void insertionsort()
         while (j >= 0 && arr[j > temp]) // 4. looping while dimana nilai j lebih besar sama dengan
         {
             // arr[j] lebih besar sama dengan temp
-            arr[j + 1] = arr[j]         //a. simpan arr [j] ke dalam variable arr[j + 1]
-                j - ;                         //b. decrement nilai j by `1
+            arr[j + 1] = arr[j];         //a. simpan arr [j] ke dalam variable arr[j + 1]
+            j -- ;                         //b. decrement nilai j by `1
 
         }
         arr[j + 1] = temp;              //5. simpan nilai temp ke dalam arr[j + 1]
