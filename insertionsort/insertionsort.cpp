@@ -8,16 +8,24 @@ void input()
 {
     while (true)
         cout << "masukkan jumlah data pada Array: ";    // membuat inputan jumlah element array
-        cin >> n;        //memanggil variable inputan n
+    cin >> n;        //memanggil variable inputan n
 
-        if (n <= 20)
-        {               // membuat kondisi n tidak lebih dari 20 
-            break;
+    if (n <= 20)
+    {  // membuat kondisi n tidak lebih dari 20 
+        break;
 
+    }
+    else
+    {
+        cout << "\nArray yang anda masukkan maksimal 20 element. \n"; // Menampilkan
+    }
 
-        }
-
+    cout << endl;
+    cout << "====================" << endl;
+    cout << "Masukkan element array" << endl;
+    cout << "====================" << endl;
 }
+
 int main()
 {
     std::cout << "Hello World!\n";
